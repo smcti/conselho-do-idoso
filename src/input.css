@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@layer components {
+    .standard-text{
+        @apply text-gray-800 font-roboto text-justify lg:text-lg xl:text-xl;
+    }
+    .default-window{
+        @apply m-0 px-4 sm:p-6 md:px-8 lg:px-12 xl:px-44 ;
+    }
+    .title{
+        @apply text-lg text-center pt-10 pb-3 font-bold text-orange-600
+        md:text-2xl
+        xl:text-3xl
+        2xl:text-4xl;
+    }
+    .title2{
+        @apply text-lg text-center font-bold text-orange-600
+        md:text-xl
+        xl:text-2xl
+        2xl:text-3xl;
+    }
+    .card{
+        @apply flex flex-col gap-4 bg-gray-200 rounded-xl shadow-md p-4 
+        md:p-8 ;
+    }
+}
